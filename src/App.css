@@ -1,0 +1,48 @@
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #22d3ee;
+  width: 0;
+  animation:
+    typing 12s steps(30) infinite,
+    blink .7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 18ch;   /* Mobile */
+  }
+  60% {
+    width: 18ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 28ch; /* Desktop */
+    }
+    60% {
+      width: 28ch;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
