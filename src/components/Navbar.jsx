@@ -107,6 +107,7 @@ function Navbar() {
           top-16
           left-0
           w-full
+           z-[999]
           bg-black
           text-white
           backdrop-blur-md
